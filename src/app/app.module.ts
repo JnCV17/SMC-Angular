@@ -26,7 +26,7 @@ import { Http, HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { Ng2SmartTableModule } from 'ng2-smart-table';
-
+import { ChartsModule } from 'ng2-charts';
 
 import { ProgramsService } from './services/programs.service';
 import { OutcomeService } from './services/outcome.service';
@@ -34,6 +34,9 @@ import { UserService } from './services/user.service';
 import { PlanAssessmentService } from './services/plan-assessment.service';
 import { AuthService } from './services/auth.service';
 import { MethodService } from './services/method.service';
+import { TablaCreatePlanComponent } from './tabla-create-plan/tabla-create-plan.component';
+import { ChartFrontComponent } from './chart-front/chart-front.component';
+import { ChartBackComponent } from './chart-back/chart-back.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +50,10 @@ import { MethodService } from './services/method.service';
     HomeComponent,
     CreatePlanComponent,
     AboutComponent,
-    AssignLeaderComponent
+    AssignLeaderComponent,
+    TablaCreatePlanComponent,
+    ChartFrontComponent,
+    ChartBackComponent
   ],
   imports: [
     BrowserModule,
@@ -57,6 +63,7 @@ import { MethodService } from './services/method.service';
     HttpClientModule,
     FormsModule,
     Ng2SmartTableModule,
+    ChartsModule,
 
   ],
   providers: [ProgramsService,OutcomeService,PlanAssessmentService,UserService,AuthService,MethodService],
