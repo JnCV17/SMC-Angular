@@ -17,6 +17,10 @@ import { AdminContentComponent } from './admin/admin-content/admin-content.compo
 import { AdminFooterComponent } from './admin/admin-footer/admin-footer.component';
 import { AdminControlSidebarComponent } from './admin/admin-control-sidebar/admin-control-sidebar.component';
 import { AdminDashboard1Component } from './admin/admin-dashboard1/admin-dashboard1.component';
+import { HomeComponent } from './home/home.component';
+import { CreatePlanComponent } from './create-plan/create-plan.component';
+import { AboutComponent } from './about/about.component';
+import { AssignLeaderComponent } from './assign-leader/assign-leader.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { AdminDashboard1Component } from './admin/admin-dashboard1/admin-dashboa
     StarterLeftSideComponent,
     StarterContentComponent,
     StarterFooterComponent,
-    StarterControlSidebarComponent
+    StarterControlSidebarComponent,
+    HomeComponent,
+    CreatePlanComponent,
+    AboutComponent,
+    AssignLeaderComponent
   ],
   imports: [
     BrowserModule,
