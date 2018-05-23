@@ -18,7 +18,6 @@ import { AssignLeaderComponent } from '../assign-leader/assign-leader.component'
       { path:'create',component:CreatePlanComponent},
       { path:'about',component:AboutComponent},
       { path:'assign',component:AssignLeaderComponent},
-      { path:'starter', component: StarterComponent },
       { path:'admin', component: AdminComponent },
     ])
   ],

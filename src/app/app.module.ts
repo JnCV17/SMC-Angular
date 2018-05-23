@@ -22,6 +22,19 @@ import { CreatePlanComponent } from './create-plan/create-plan.component';
 import { AboutComponent } from './about/about.component';
 import { AssignLeaderComponent } from './assign-leader/assign-leader.component';
 
+import { Http, HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { Ng2SmartTableModule } from 'ng2-smart-table';
+
+
+import { ProgramsService } from './services/programs.service';
+import { OutcomeService } from './services/outcome.service';
+import { UserService } from './services/user.service';
+import { PlanAssessmentService } from './services/plan-assessment.service';
+import { AuthService } from './services/auth.service';
+import { MethodService } from './services/method.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,9 +52,14 @@ import { AssignLeaderComponent } from './assign-leader/assign-leader.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AdminModule
+    AdminModule,
+    HttpModule,
+    HttpClientModule,
+    FormsModule,
+    Ng2SmartTableModule,
+
   ],
-  providers: [],
+  providers: [ProgramsService,OutcomeService,PlanAssessmentService,UserService,AuthService,MethodService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
